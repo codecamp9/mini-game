@@ -6,7 +6,7 @@ Game ini hanya di buat dengan JavaScript murni.
 
 ## Visit Game
 
-https://game-js-nine.vercel.app/
+https://mini-game-codecamp.vercel.app/
 
 ## Cara Bermain
 
