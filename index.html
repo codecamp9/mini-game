@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✨ Scratch Project ✨</title>
+    <!-- 👇 css code file 👇 -->
+    <link rel="stylesheet" href="./src/style/global.css" />
+  </head>
+  <style>
+    .kontrol {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+    }
+
+    @media screen and (max-width: 480px) {
+      main {
+        padding: 25px;
+      }
+
+      .score {
+        justify-content: center;
+      }
+
+      .container {
+        display: block;
+      }
+
+      #kanvas {
+        width: 100%;
+        height: 500px;
+        border: 10px solid tomato;
+      }
+    }
+
+    @media screen and (min-width: 480px) {
+      .kontrol {
+        display: none;
+      }
+    }
+  </style>
+  <body>
+    <!-- Integrated Blank From Scratch Project -->
+    <main>
+      <h1 class="title"><marquee behavior="" direction="">GAME KEGOBELSSAN</marquee></h1>
+      <div class="container">
+        <div id="kanvas"></div>
+        <div class="score">
+          <div class="score-item">
+            <p>SCORE</p>
+            <div id="score">
+              <p>0</p>
+            </div>
+          </div>
+          <div class="score-item">
+            <p>LEVEL</p>
+            <p>1</p>
+          </div>
+        </div>
+        <div class="kontrol">
+          <div class="kontrol-item"><button onclick="moveAtas()">Atas</button></div>
+          <div class="kontrol-item-bawah"><button onclick="moveBawah()">Bawah</button></div>
+          <div class="kontrol-item"><button onclick="moveMaju()">Maju</button></div>
+          <div class="kontrol-item"><button onclick="moveMundur()">Mundur</button></div>
+        </div>
+        <div></div>
+      </div>
+    </main>
+    <!-- 👇 javascript code file 👇 -->
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

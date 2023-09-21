@@ -1,0 +1,62 @@
+/*? global clearing */
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.food {
+  background-image: url("../imgs/food.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.player {
+  background-image: url("../imgs/player.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+main {
+  padding: 50px;
+  height: 100vh;
+  background-color: #333;
+}
+
+.title {
+  color: crimson;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.score {
+  display: flex;
+  justify-content: end;
+  color: white;
+  padding: 10px;
+}
+
+.score-item {
+  background-color: rgb(175, 25, 25);
+  padding: 10px;
+  height: 55px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+#kanvas {
+  width: 80%;
+  height: 80vh;
+  border: 20px solid tomato;
+  background-color: brown;
+  display: grid;
+  grid-template: repeat(15, 1fr) / repeat(15, 1fr);
+}
